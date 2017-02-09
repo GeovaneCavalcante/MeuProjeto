@@ -1,0 +1,122 @@
+.primeiradiv{
+    background-image: url(../Imagens/topo.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    padding-bottom: 15%;
+}
+#nav{
+    border: solid 0px;
+    background: inherit;
+    padding-top: 20px;
+}
+#a{
+    color: white;
+    padding-right:  15px;
+    padding-left: 15px;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+#a:hover{
+    text-shadow: black 1px 1px 1px ;
+    border-radius: 9px 9px 9px 9px ;
+    color: white;
+}
+#listanav{
+    margin-right: 10%;
+}
+#div1{
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #titulo{
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        letter-spacing: 4px;
+        line-height: 70px;
+        font-family: Intro;
+        padding-top: 5%;
+    }
+    #buteconte{
+        margin-left: 40%;
+        font-family: sans-serif;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 18px;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-weight: 700;
+         letter-spacing: 1px;
+    }
+}
+  #titulo{
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        letter-spacing: 4px;
+        line-height: 70px;
+        font-family: Intro;
+        padding-top: 5%;
+    }
+    #buteconte{
+        margin-left: 40%;
+        font-family: sans-serif;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 18px;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-weight: 700;
+         letter-spacing: 1px;
+    }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #titulo{
+        margin-left: 50%;
+        color: white;
+        font-size: 55px;
+        letter-spacing: 4px;
+        line-height: 70px;
+        font-family: Intro;
+        padding-top: 8%;
+        padding-bottom: 1%;
+    }
+    #buteconte{
+    margin-left: 67%;
+    font-family: sans-serif;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 18px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: 700;
+     letter-spacing: 1px;
+}
+}
+#bute{
+
+}
+#bute:focus{
+    background: #3033b4;
+}
+
+@font-face {
+  font-family: Intro;
+  src: url('../fontes/Intro.otf');
+}
+@font-face {
+  font-family: bu;
+  src: url('../fontes/bu.otf');
+}
+@font-face {
+  font-family: uf;
+  src: url('../fontes/uf.ttf');
+}
+@font-face {
+  font-family: roda;
+  src: url('../fontes/roda.ttf');
+}
