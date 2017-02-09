@@ -8,7 +8,20 @@
     height: 100%;
     position: relative;
     width: 100%;
-    padding-bottom: 15%;
+    padding-bottom: 18%;
+}
+#divante{
+    background-color: #e9ecf5;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    position: relative;
+    width: 100%;
+}
+#carrosel{
+    border-radius: 9px 9px 9px 9px;
 }
 #nav{
     border: solid 0px;
@@ -54,8 +67,42 @@
         font-weight: 700;
          letter-spacing: 1px;
     }
+    .teste{
+      padding-top: 3%;
+      margin-left: 0;
+      color: #434c5d;
+      font-size: 45px;
+      letter-spacing: 2px;
+      line-height: 60px;
+      text-align: center;
+      font-family: Intro;
+    }
+    #imagen{
+        width: 100%;
+        height: 250px;
+    }
+    #ti3{
+      margin-top: 1px;
+      color: #434c5d;
+      text-align: center;
+      letter-spacing: 4px;
+      line-height: 80px;
+      font-family: Intro;
+      margin-left: 10px;
+      padding-top: 20%;
+    }
 }
-  #titulo{
+   .teste{
+      padding-top: 3%;
+      margin-left: 0;
+      color: #434c5d;
+      font-size: 45px;
+      letter-spacing: 2px;
+      line-height: 60px;
+      text-align: center;
+      font-family: Intro;
+    }
+#titulo{
         font-size: 40px;
         text-align: center;
         color: white;
@@ -63,8 +110,8 @@
         line-height: 70px;
         font-family: Intro;
         padding-top: 5%;
-    }
-    #buteconte{
+}
+#buteconte{
         margin-left: 40%;
         font-family: sans-serif;
         border-radius: 20px 20px 20px 20px;
@@ -73,7 +120,32 @@
         padding-right: 2%;
         font-weight: 700;
          letter-spacing: 1px;
+}
+#imagen{
+        width: 100%;
+        height: 260px;
+}
+
+.hr{
+    margin-bottom: 4%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+ #conheça{
+        padding-top: 4%;
+        padding-bottom: 10%;
     }
+#ti3{
+      margin-top: 1px;
+      color: #434c5d;
+      font-size: 50px;
+      letter-spacing: 2px;
+      line-height: 60px;
+      font-family: Intro;
+      padding-top: 10%;
+}
+
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #titulo{
@@ -87,15 +159,40 @@
         padding-bottom: 1%;
     }
     #buteconte{
-    margin-left: 67%;
-    font-family: sans-serif;
-    border-radius: 20px 20px 20px 20px;
-    font-size: 18px;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-weight: 700;
-     letter-spacing: 1px;
-}
+        margin-left: 67%;
+        font-family: sans-serif;
+        border-radius: 20px 20px 20px 20px;
+        font-size: 18px;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .teste{
+      padding-top: 45px;
+      margin-left: 0%;
+      color: #434c5d;
+      font-size: 70px;
+      letter-spacing: 4px;
+      line-height: 80px;
+      font-family: Intro;
+    }
+    #imagen{
+        width: 350px;
+        height: 250px;
+    }
+    #ti3{
+      color: #434c5d;
+      font-size: 60px;
+      letter-spacing: 4px;
+      line-height: 80px;
+      font-family: Intro;
+      margin-left: -45px;
+    }
+    #conheça{
+        margin-top: -90px;
+        padding-bottom: 10%;
+    }
 }
 #bute{
 
@@ -103,6 +200,7 @@
 #bute:focus{
     background: #3033b4;
 }
+
 
 @font-face {
   font-family: Intro;

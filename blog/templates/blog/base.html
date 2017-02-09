@@ -6,10 +6,10 @@
     <title></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../../static/blog/BS/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../static/blog/css/main.css">
-    <script src="../../static/blog/BS/js/jquery-3.1.1.min.js"></script>
-    <script src="../../static/blog/BS/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'blog/BS/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/main.css' %}">
+    <script src="{% static 'blog/BS/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'blog/BS/js/bootstrap.js' %}"></script>
 
 </head>
 <body>
@@ -46,7 +46,7 @@
             <div id="div1" class="col-lg-12 col-xs-12 col-sm-12">
                 <br>
                 <h1 id="titulo">Bem vindos<br>Conheça-nos</h1>
-                <button id="buteconte" type="button" class="btn btn-danger"><a href="http://127.0.0.1:8000/admin" target="_blank" style="text-decoration: none; color: white">Contate</a></button>
+                <button id="buteconte" type="button" class="btn btn-danger"><a href=""  style="text-decoration: none; color: white">Contate</a></button>
             </div>
         </div>
     </div>
@@ -56,10 +56,13 @@
         <div class="row">
             <div class="col-lg-12">
                 {% block content %}
+
                 {% endblock %}
             </div>
         </div>
     </div>
 </div>
+{% block fim %}
+{% endblock fim %}
 </body>
 </html>
