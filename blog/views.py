@@ -27,7 +27,7 @@ def get_name(request):
     else:
         form = MeuForm()
 
-    return render(request, 'blog/restultados.html', {'form': form})
+    return render(request, 'blog/index.html', {'form': form})
 
 
 def resultados(request, postagens_id):
