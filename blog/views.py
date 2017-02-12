@@ -14,7 +14,7 @@ def index(request):
     }
     return render(request, 'blog/index.html', context)
 
-def get_name(request):
+def get_name(request, MeuForm):
     if request.method == 'POST':
         form = MeuForm(request.POST)
         if form.is_valid():
@@ -23,7 +23,7 @@ def get_name(request):
             q.titulo = form.data.get('titulo')
             q.texto = form.data.get('texto')
             q.save()
-            return HttpResponseRedirect('/resultados/')
+            return HttpResponseRedirect('/index/')
     else:
         form = MeuForm()
 
