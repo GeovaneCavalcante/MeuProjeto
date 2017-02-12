@@ -91,6 +91,11 @@
       margin-left: 10px;
       padding-top: 20%;
     }
+    #image_caro{
+        width: 50px;
+        height: 40px;
+    }
+
 }
    .teste{
       padding-top: 3%;
@@ -145,10 +150,10 @@
       font-family: Intro;
       padding-top: 10%;
 }
-#image_caro{
-    width: 650px;
-    height: 367px;
-}
+
+/*
+
+
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #titulo{
@@ -195,6 +200,10 @@
     #conheça{
         margin-top: -90px;
         padding-bottom: 10%;
+    }
+    #image_caro{
+        width: 650px;
+        height: 367px;
     }
 }
 #bute{
