@@ -1,9 +1,8 @@
 from django.shortcuts import render, loader, get_object_or_404
 from .models import Postagens, Carosel, Enviados
-from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.mail import send_mail, BadHeaderError
-from .forms import MeuForm
+from .forms import Meu_Form
 
 def index(request):
     lista_postagem = Postagens.objects.order_by('-data_publicada')[:5]
@@ -14,9 +13,9 @@ def index(request):
     }
     return render(request, 'blog/index.html', context)
 
-def get_name(request, MeuForm):
+def Forms_meu(request):
     if request.method == 'POST':
-        form = MeuForm(request.POST)
+        form = Meu_Form(request.POST)
         if form.is_valid():
             q = Enviados()
             q.email = form.data.get('email')
@@ -25,9 +24,9 @@ def get_name(request, MeuForm):
             q.save()
             return HttpResponseRedirect('/index/')
     else:
-        form = MeuForm()
+        form = Meu_Form()
 
-    return render(request, 'blog/index.html', {'form': form})
+    return render(request, 'blog/index.html', {'form':form})
 
 
 def resultados(request, postagens_id):
