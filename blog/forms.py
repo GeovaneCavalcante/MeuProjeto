@@ -1,6 +1,6 @@
 from django import forms
 
-class Meu_Form(forms.Form):
-    titulo = forms.CharField(label='titulo', max_length=50)
-    texto = forms.CharField(label='texto', max_length=1000)
-    email = forms.CharField(label='email', max_length=30)
+class Meu_From(forms.Form):
+    email = forms.CharField(label='Your name', max_length=100)
+    titulo = forms.CharField(label='Titulo', max_length=100)
+    texto = forms.CharField(label='Texto', max_length=500)

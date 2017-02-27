@@ -54,7 +54,23 @@
                         <h4 class="modal-title">Manda sua menssagem pra gente :D</h4>
                       </div>
                       <div class="modal-body">
-
+                         <form action="/index/" method="post">
+                             {% csrf_token %}
+                             <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Email">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Titulo</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" name="titulo" placeholder="Titulo">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Texto</label>
+                                <textarea class="form-control" rows="6" name="texto" placeholder="Texto"></textarea>
+                              </div>
+                             <button type="submit" class="btn btn-danger">Envia</button>
+                             <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:  #3033b4; color: white">Fechar</button>
+                         </form>
                       </div>
                     </div><!-- /.modal-content -->
                   </div><!-- /.modal-dialog -->
@@ -183,22 +199,5 @@
         </div>
     </div>
 </div>
-    <form action="/index/" method="post">
-      {% csrf_token %}
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-      </div>
-      <div class="form-group">
-        <label for="titulo">Titulo</label>
-        <input name="titulo" type="text" class="form-control" id="exampleInputPassword1" placeholder="Titulo">
-      </div>
-      <div class="form-group">
-        <label for="texto">Texto</label>
-        <textarea name="texto" class="form-control" rows="3" placeholder="Texto"></textarea>
-      </div>
-       <button type="submit" class="btn btn-danger">Envia</button>
-       <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #484ca0; color: white">Feche</button>
-    </form>
 </body>
 </html>

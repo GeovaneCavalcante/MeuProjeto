@@ -13,14 +13,13 @@ class Postagens(models.Model):
     def __str__(self):
         return self.titulo
 
-class Enviados(models.Model):
-    titulo = models.CharField(max_length=50)
-    texto = models.CharField(max_length=400)
-    email = models.CharField(max_length=400)
+class formss(models.Model):
+    email = models.EmailField(max_length=100)
+    titulo = models.CharField(max_length=100)
+    texto = models.TextField()
 
-    identidicador = (" E-mail registrados")
     def __str__(self):
-        return (self.identidicador)
+        return self.titulo
 
 class Carosel(models.Model):
     titulo_carosel = models.CharField(max_length=50)

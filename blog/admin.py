@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Postagens, Carosel,Enviados
+from .models import Postagens, Carosel, formss
 admin.site.register(Postagens)
 admin.site.register(Carosel)
-admin.site.register(Enviados)
+admin.site.register(formss)
+
 
